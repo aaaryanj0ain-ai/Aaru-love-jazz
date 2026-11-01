@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4b0928">
+<title>How Much I Love You, Jayati ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;padding:20px;min-height:100vh;display:flex;justify-content:center;align-items:center;
+ font-family:Georgia,serif;text-align:center;color:#fff;
+ background:linear-gradient(135deg,#230015,#76002f,#c2185b);
+ background-size:300% 300%;animation:bg 12s ease infinite;overflow-x:hidden
+}
+@keyframes bg{50%{background-position:100% 100%}}
+.card{
+ max-width:520px;width:100%;padding:30px 22px;border:1px solid #ffffff55;border-radius:28px;
+ background:#ffffff18;backdrop-filter:blur(12px);box-shadow:0 15px 50px #0005;position:relative;z-index:2
+}
+h1{font-size:clamp(32px,8vw,42px);color:#ffb6d0}
+.heart{font-size:65px;animation:beat 1s infinite}
+@keyframes beat{50%{transform:scale(1.22)}}
+p{line-height:1.85;font-size:16px}
+button{
+ border:0;border-radius:30px;padding:14px 22px;margin:9px;background:#ff5b91;color:white;
+ font-weight:bold;font-size:16px;cursor:pointer
+}
+button:hover{transform:scale(1.04)}
+.box,.music-box{background:#ffffff20;border-radius:20px;padding:20px;margin-top:20px;line-height:1.8}
+#reason{font-size:18px;color:#ffe0ed;min-height:65px;display:grid;place-items:center}
+.music-box h2{color:#ffb6d0;margin-top:0}
+.music-box iframe{width:100%;height:200px;border:0;border-radius:16px}
+#surprise{display:none}
+.small{font-size:13px;color:#ffc4d9}
+.signature{color:#ffd0e1;font-weight:bold}
+.float{position:fixed;top:-30px;pointer-events:none;z-index:5;animation:fall 5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}
+@media(max-width:380px){.card{padding:25px 16px}}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <p class="small">A LITTLE LOVE NOTE FROM ARYAN</p>
+  <h1>My Love, Jayati</h1>
+  <p>I don't know how to explain how much I love you, but I want to use this little page to remind you how special you are to me.</p>
+
+  <div class="music-box">
+    <h2>🎶 Our Special Song</h2>
+    <p>Heeriye — a little song for my favourite person. ❤️</p>
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/RLzC55ai0eo"
+      title="Heeriye - Jasleen Royal ft. Arijit Singh"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+    <p class="small">Press play to listen. YouTube playback may require a tap.</p>
+  </div>
+
+  <div class="box">
+    <h2>🥹 You Are My Everything</h2>
+    <p>Tu meri life ka sirf ek hissa nahi hai, tu meri life ki sabse khoobsurat feeling hai. Teri smile meri happiness hai, teri awaaz mera sukoon hai, aur tera saath meri favourite jagah hai.</p>
+  </div>
+
+  <h2>💗 Little Reasons I Love You</h2>
+  <div id="reason" class="box">Because you make my world beautiful. ❤️</div>
+  <button type="button" onclick="nextReason()">Next Reason 💕</button>
+
+  <div class="box">
+    <h2>💌 A Letter From Aryan</h2>
+    <p>
+      Jayati, I love you more than words can ever explain.<br><br>
+      Kabhi kabhi main shayad apni feelings sahi se express nahi kar pata, lekin iska matlab ye nahi ki mera pyaar kam hai.<br><br>
+      Main tujhe tere perfect hone ki wajah se nahi, balki tu jaisi hai waise hi pyaar karta hoon. Teri chhoti chhoti baatein, tera gussa, teri smile aur teri cute si harkatein — sab mere liye special hain.<br><br>
+      Main chahta hoon ki jab tu khush ho, main tere saath hasun. Aur jab tu udaas ho, main tera haath pakad kar tujhe samajhne ki koshish karun.<br><br>
+      I don't promise a perfect life, but I promise to keep choosing you, respecting you and loving you. You are my favourite person, my happiness and someone I feel lucky to have in my life.
+    </p>
+    <p class="signature">I LOVE YOU SO MUCH, JAYATI. ❤️</p>
+  </div>
+
+  <button type="button" onclick="showLove()">One Last Surprise 🎁</button>
+  <section id="surprise" class="box">
+    <div class="heart">💖</div>
+    <h1>It's Always You!</h1>
+    <p>In every lifetime, in every universe, I would still wish to find you. No matter how many days pass, I hope we keep choosing kindness, honesty and each other.</p>
+    <h2>You're my favourite person, Jayati. 🥹</h2>
+    <p class="signature">Forever with love,<br>Aryan ❤️</p>
+  </section>
+
+  <p class="small">Made with endless love by Aryan for Jayati ❤️</p>
+</div>
+
+<script>
+const reasons=[
+ "Your beautiful smile makes my day. ❤️",
+ "Your voice brings me comfort.",
+ "Because you make ordinary moments special.",
+ "Because I love your little habits.",
+ "Because talking to you never gets boring.",
+ "Because your happiness matters to me.",
+ "Because I want to share my good days with you.",
+ "Because I want to support your dreams.",
+ "Because even silence feels comfortable with you.",
+ "Because you are my favourite person.",
+ "Because I feel lucky to know you.",
+ "Because I miss you after saying goodbye.",
+ "Because I want to keep making memories with you.",
+ "Because I love the person you are.",
+ "Because I choose to care for you every day.",
+ "Because you make my heart smile.",
+ "Because I want to keep learning how to love you better.",
+ "Because your feelings matter to me.",
+ "Because you are simply you. 💗",
+ "Because my world feels brighter with you in it."
+];
+let count=0;
+function nextReason(){
+ document.getElementById("reason").textContent=reasons[count%reasons.length];
+ count++;
+}
+function showLove(){
+ const surprise=document.getElementById("surprise");
+ surprise.style.display="block";
+ surprise.scrollIntoView({behavior:"smooth",block:"center"});
+ for(let i=0;i<35;i++){
+  const h=document.createElement("span");
+  h.className="float";
+  h.textContent=["❤️","💗","💕","✨","🌸"][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(18+Math.random()*18)+"px";
+  h.style.animationDelay=(Math.random()*.8)+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+ }
+}
+</script>
+</body>
+</html>
